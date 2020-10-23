@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".NoActionBar"></activity>
+        <activity android:name=".SpinnerTest" />
+        <activity android:name=".ListViewTest" />
+        <activity android:name=".MoveCircle" />
+        <activity android:name=".SetParameter" />
+        <activity android:name=".LayoutParameter" />
+        <activity android:name=".MultiPage" />
+        <activity android:name=".OptionMenu" />
+        <activity android:name=".FocusTest" />
+        <activity android:name=".LongClick" />
+        <activity android:name=".Fruit" />
+        <activity android:name=".EditTextTest" />
+        <activity android:name=".ImageViewTest" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RadioCheck" />
+        <activity android:name=".HandleEvent" />
+        <activity android:name=".Inflation" />
+        <activity android:name=".FreeLine" />
+        <activity android:name=".ListAddDel" />
+        <activity android:name=".GridViewTest" />
+        <activity android:name=".ShowHideActionBar" />
+        <activity android:name=".ListIconText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
