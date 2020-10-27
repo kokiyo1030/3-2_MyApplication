@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".NoActionBar"></activity>
+        <activity android:name=".ActionModeTest"></activity>
+        <activity android:name=".ContextMenuTest" />
+        <activity android:name=".ActionProviderTest" />
+        <activity android:name=".ActionSwitch" />
+        <activity android:name=".ActionView" />
+        <activity android:name=".ChangeMenu" />
+        <activity android:name=".MenuCheck" />
+        <activity android:name=".ListIconText" />
+        <activity android:name=".NoActionBar" />
         <activity android:name=".SpinnerTest" />
         <activity android:name=".ListViewTest" />
         <activity android:name=".MoveCircle" />
@@ -31,7 +38,7 @@
         <activity android:name=".ListAddDel" />
         <activity android:name=".GridViewTest" />
         <activity android:name=".ShowHideActionBar" />
-        <activity android:name=".ListIconText">
+        <activity android:name=".PopupMenuTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

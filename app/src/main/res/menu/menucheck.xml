@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/check_group"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/bigfont"
+            android:title="BigFont"/>
+    </group>
+    <group
+        android:id="@+id/radio_group"
+        android:checkableBehavior="single">
+        <item android:title="Red" android:id="@+id/red" />
+        <item android:title="Green" android:id="@+id/green"/>
+        <item android:title="Blue" android:id="@+id/blue"/>
+    </group>
+</menu>

@@ -1,0 +1,11 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/counter"
+        android:title="Counter"
+        app:showAsAction="always"
+        app:actionProviderClass="com.example.myapplication.CounterProvider" />
+    <item android:id="@+id/countermenu"
+        android:title="Counter"
+        app:showAsAction="never"
+        app:actionProviderClass="com.example.myapplication.CounterProvider" />
+</menu>
