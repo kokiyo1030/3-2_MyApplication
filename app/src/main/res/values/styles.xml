@@ -18,4 +18,18 @@
         <item name="android:textStyle">italic</item>
         <item name="android:textSize">30sp</item>
     </style>
+
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+    </style>
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <style name="MySpinnerTimePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:timePickerStyle">@style/MySpinnerTimePicker</item>
+    </style>
+    <style name="MySpinnerTimePicker" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
 </resources>

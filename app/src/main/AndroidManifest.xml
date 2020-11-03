@@ -2,14 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ActionModeTest"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".OrderDialog"></activity>
+        <activity android:name=".PickerDialogTest" />
+        <activity android:name=".TimePickerTest" />
+        <activity android:name=".DatePickerTest" />
+        <activity android:name=".ClockTest" />
+        <activity android:name=".RatingBarTest" />
+        <activity android:name=".SeekBarTest" />
+        <activity android:name=".ProgressBarTest" />
+        <activity android:name=".Popup" />
+        <activity android:name=".SelectDialog" />
+        <activity android:name=".MultiSelectDialog" />
+        <activity android:name=".SingleSelectDialog" />
+        <activity android:name=".OkCancel" />
+        <activity android:name=".ActionModeTest" />
         <activity android:name=".ContextMenuTest" />
         <activity android:name=".ActionProviderTest" />
         <activity android:name=".ActionSwitch" />
@@ -38,7 +54,10 @@
         <activity android:name=".ListAddDel" />
         <activity android:name=".GridViewTest" />
         <activity android:name=".ShowHideActionBar" />
-        <activity android:name=".PopupMenuTest">
+        <activity android:name=".PopupMenuTest" />
+        <activity android:name=".AutoComplete" />
+        <activity android:name=".ScrollViewTest" />
+        <activity android:name=".WebViewTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
