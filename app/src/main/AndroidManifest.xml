@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".OrderDialog"></activity>
+        <activity android:name=".SoundEdit"></activity>
+        <activity android:name=".OrderDialog" />
         <activity android:name=".PickerDialogTest" />
         <activity android:name=".TimePickerTest" />
         <activity android:name=".DatePickerTest" />
@@ -57,7 +58,8 @@
         <activity android:name=".PopupMenuTest" />
         <activity android:name=".AutoComplete" />
         <activity android:name=".ScrollViewTest" />
-        <activity android:name=".WebViewTest">
+        <activity android:name=".WebViewTest" />
+        <activity android:name=".NumEdit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
