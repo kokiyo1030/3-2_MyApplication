@@ -12,23 +12,38 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MoveCircle extends AppCompatActivity {
     private MyView vw;
+    float mX, mY;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(savedInstanceState == null) {
+            mX = 100;
+            mY = 100;
+        } else {
+            mX = savedInstanceState.getFloat("x");
+            mY = savedInstanceState.getFloat("y");
+        }
         vw = new MyView(this);
         vw.setFocusable(true);
         vw.setFocusableInTouchMode(true);
         setContentView(vw);
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putFloat("x", mX);
+        outState.putFloat("y", mY);
+    }
+
     protected class MyView extends View {
-        float mX,mY;
+//        float mX,mY;
         int mColor;
 
         public MyView(Context context) {
             super(context);
-            mX = 100;
-            mY = 100;
+//            mX = 100;
+//            mY = 100;
             mColor = Color.BLUE;
         }
 
