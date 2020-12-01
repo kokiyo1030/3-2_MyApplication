@@ -12,7 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FragmentTest"></activity>
+        <activity android:name=".ProductList"></activity>
+
+        <provider
+            android:name=".EWProvider"
+            android:authorities="com.example.myapplication"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".EnglishWord" />
+        <activity android:name=".BackStack" />
+        <activity android:name=".FragmentArgument" />
+        <activity android:name=".FragmentManagerTest" />
+        <activity android:name=".FragmentTest" />
         <activity android:name=".MoveCircle" />
         <activity android:name=".ActChild" />
         <activity android:name=".CallOther" />
@@ -20,7 +32,7 @@
         <activity android:name=".CallActivity" />
         <activity android:name=".Rainbow" />
         <activity android:name=".SoundEdit" />
-        <activity android:name=".FragmentManagerTest">
+        <activity android:name=".CallWordCP">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

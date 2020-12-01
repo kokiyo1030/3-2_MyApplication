@@ -12,6 +12,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class CounterFragment extends Fragment {
+    public static CounterFragment newInstance(int start){
+        CounterFragment cf = new CounterFragment();
+        Bundle args = new Bundle();
+        args.putInt("start",start);
+        cf.setArguments(args);
+        return cf;
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -19,6 +27,13 @@ public class CounterFragment extends Fragment {
         View root = inflater.inflate(R.layout.counterfragment, container, false);
         Button btnIncrease = (Button)root.findViewById(R.id.btnincrease);
         final TextView textCounter = (TextView)root.findViewById(R.id.txtcounter);
+
+        int start = 0;
+        Bundle args = getArguments();
+        if(args != null){
+            start = args.getInt("start");
+        }
+        textCounter.setText(Integer.toString(start));
 
         if(savedInstanceState != null) {
             textCounter.setText(Integer.toString(savedInstanceState.getInt("counter")));

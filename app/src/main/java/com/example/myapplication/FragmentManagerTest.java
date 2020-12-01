@@ -52,9 +52,9 @@ public class FragmentManagerTest extends AppCompatActivity {
                     tr.commit();
                 }
                 break;
-            case R.id.btnshow:
-                if (fragment ==  null) {
-                    Toast.makeText(this, "프래그먼트가 없습니다", Toast.LENGTH_SHORT).show();
+            case R.id.btnhideshow:
+                if (fragment == null) {
+                    Toast.makeText(this, "프래그먼트가 없습니다.", Toast.LENGTH_SHORT).show();
                 } else {
                     FragmentTransaction tr = fm.beginTransaction();
                     if (fragment.isHidden()) {
